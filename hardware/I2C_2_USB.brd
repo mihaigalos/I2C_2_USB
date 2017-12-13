@@ -3883,9 +3883,6 @@ design rules under a new name.</description>
 <contactref element="D2" pad="C"/>
 <contactref element="R3" pad="1"/>
 <contactref element="J3" pad="D+"/>
-<wire x1="13.1064" y1="1.9812" x2="13.8684" y2="1.9812" width="0.1524" layer="1"/>
-<wire x1="11.8872" y1="3.2004" x2="13.1064" y2="1.9812" width="0.1524" layer="1"/>
-<wire x1="11.7348" y1="3.2004" x2="11.8872" y2="3.2004" width="0.1524" layer="1"/>
 <wire x1="9.7536" y1="5.1816" x2="9.906" y2="5.0292" width="0.1524" layer="1"/>
 <wire x1="9.7536" y1="5.7912" x2="9.7536" y2="5.1816" width="0.1524" layer="1"/>
 <wire x1="13.8684" y1="1.9812" x2="13.97" y2="1.87" width="0.1524" layer="1"/>
@@ -3896,7 +3893,14 @@ design rules under a new name.</description>
 <wire x1="9.906" y1="5.0292" x2="11.049" y2="5.0292" width="0.1524" layer="1"/>
 <wire x1="11.049" y1="5.0292" x2="11.5316" y2="4.5466" width="0.1524" layer="1"/>
 <wire x1="11.5316" y1="4.5466" x2="11.5316" y2="3.4036" width="0.1524" layer="1"/>
-<wire x1="11.5316" y1="3.4036" x2="11.7348" y2="3.2004" width="0.1524" layer="1"/>
+<wire x1="11.5316" y1="3.4036" x2="11.8364" y2="3.0988" width="0.1524" layer="1"/>
+<wire x1="11.8364" y1="3.0988" x2="12.2174" y2="3.0988" width="0.1524" layer="1"/>
+<wire x1="12.2174" y1="3.0988" x2="12.446" y2="2.8702" width="0.1524" layer="1"/>
+<wire x1="12.446" y1="2.8702" x2="12.954" y2="2.8702" width="0.1524" layer="1"/>
+<wire x1="12.954" y1="2.8702" x2="13.1572" y2="2.667" width="0.1524" layer="1"/>
+<wire x1="13.1572" y1="2.667" x2="13.1572" y2="2.4384" width="0.1524" layer="1"/>
+<wire x1="13.1572" y1="2.4384" x2="13.7256" y2="1.87" width="0.1524" layer="1"/>
+<wire x1="13.7256" y1="1.87" x2="13.97" y2="1.87" width="0.1524" layer="1"/>
 </signal>
 <signal name="D-">
 <contactref element="R4" pad="2"/>
