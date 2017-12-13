@@ -7074,6 +7074,57 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="Seeed-OPL-Switch">
+<packages>
+<package name="SW2-4.0-6.0X3.0X2.5MM">
+<smd name="1" x="-3.325" y="0" dx="2.65" dy="1.4" layer="1"/>
+<smd name="2" x="3.325" y="0" dx="2.65" dy="1.4" layer="1"/>
+<wire x1="-3.05" y1="-1.85" x2="3.05" y2="-1.85" width="0.127" layer="21"/>
+<wire x1="3.05" y1="-1.85" x2="3.05" y2="1.85" width="0.127" layer="51"/>
+<wire x1="3.05" y1="1.85" x2="-3.05" y2="1.85" width="0.127" layer="21"/>
+<wire x1="-3.05" y1="1.85" x2="-3.05" y2="-1.85" width="0.127" layer="51"/>
+<rectangle x1="-3.048" y1="-1.905" x2="3.048" y2="1.905" layer="39"/>
+<text x="-1.905" y="2.032" size="0.889" layer="25" ratio="11">&gt;NAME</text>
+<text x="-1.905" y="0" size="0.635" layer="25" ratio="11">&gt;VALUE</text>
+<wire x1="-3.05" y1="1.8" x2="-3.05" y2="0.8" width="0.127" layer="21"/>
+<wire x1="3.05" y1="1.8" x2="3.05" y2="0.8" width="0.127" layer="21"/>
+<wire x1="3.05" y1="-1.8" x2="3.05" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="-3.05" y1="-1.8" x2="-3.05" y2="-0.8" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="BUTTON-2P">
+<pin name="1" x="-7.62" y="0" length="short"/>
+<pin name="2" x="7.62" y="0" length="short" rot="R180"/>
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<circle x="-1.905" y="0" radius="0.635" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="0.635" x2="1.27" y2="1.905" width="0.1524" layer="94"/>
+<circle x="1.905" y="0" radius="0.635" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<text x="-7.62" y="1.27" size="1.27" layer="95" ratio="10">&gt;NAME</text>
+<text x="1.27" y="1.27" size="1.27" layer="96" ratio="10">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SMD-BUTTON(2P-6.0X3.0X2.5MM)" prefix="SW" uservalue="yes">
+<description>311020029</description>
+<gates>
+<gate name="G$1" symbol="BUTTON-2P" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-DHT-1163S" package="SW2-4.0-6.0X3.0X2.5MM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7111,6 +7162,8 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <part name="SUPPLY27" library="supply2" deviceset="GND" device=""/>
 <part name="+3V19" library="supply1" deviceset="+3V3" device=""/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
+<part name="SW1" library="Seeed-OPL-Switch" deviceset="SMD-BUTTON(2P-6.0X3.0X2.5MM)" device="-DHT-1163S"/>
+<part name="SUPPLY19" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7154,6 +7207,8 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <instance part="SUPPLY27" gate="GND" x="147.32" y="5.08" rot="MR0"/>
 <instance part="+3V19" gate="G$1" x="154.94" y="27.94"/>
 <instance part="P+2" gate="1" x="121.92" y="17.78" rot="R90"/>
+<instance part="SW1" gate="G$1" x="85.09" y="60.96" rot="R90"/>
+<instance part="SUPPLY19" gate="GND" x="85.09" y="74.93" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -7197,6 +7252,11 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <segment>
 <pinref part="U$4" gate="G$1" pin="GND"/>
 <pinref part="SUPPLY27" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="SW1" gate="G$1" pin="2"/>
+<pinref part="SUPPLY19" gate="GND" pin="GND"/>
+<wire x1="85.09" y1="68.58" x2="85.09" y2="72.39" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -7255,8 +7315,11 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 </segment>
 <segment>
 <pinref part="R7" gate="A" pin="1"/>
-<wire x1="86.36" y1="53.34" x2="82.55" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="53.34" x2="85.09" y2="53.34" width="0.1524" layer="91"/>
 <label x="82.55" y="53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="SW1" gate="G$1" pin="1"/>
+<wire x1="85.09" y1="53.34" x2="82.55" y2="53.34" width="0.1524" layer="91"/>
+<junction x="85.09" y="53.34"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
