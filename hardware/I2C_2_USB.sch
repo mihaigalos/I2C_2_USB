@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -7125,6 +7125,86 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-IC-Special-Function">
+<description>&lt;h3&gt;SparkFun Special Function ICs&lt;/h3&gt;
+This library contains ICs that do not really fit into the other, more generic categories.  Basically, anything that serves some function but has a bunch of brains or special bias circuitry that prevents it from being used as a general part qualifies for this category.
+&lt;p&gt;Contents:
+&lt;ul&gt;&lt;li&gt;555 timers&lt;/li&gt;
+&lt;li&gt;LED drivers&lt;/li&gt;
+&lt;li&gt;H-Bridge drivers&lt;/li&gt;
+&lt;li&gt;Motor drivers&lt;/li&gt;
+&lt;li&gt;Waveform generators&lt;/li&gt;
+&lt;li&gt;Crypto&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="SOT23-3">
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-0.8" y1="0.7" x2="-1.4" y2="0.7" width="0.2032" layer="21"/>
+<wire x1="-1.4" y1="0.7" x2="-1.4" y2="-0.1" width="0.2032" layer="21"/>
+<wire x1="0.8" y1="0.7" x2="1.4" y2="0.7" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="0.7" x2="1.4" y2="-0.1" width="0.2032" layer="21"/>
+<smd name="3" x="0" y="1.1" dx="0.8" dy="0.9" layer="1"/>
+<smd name="2" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
+<smd name="1" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
+<text x="-1.905" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="2.54" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="ATSHA204">
+<pin name="SDA" x="-10.16" y="0" length="short"/>
+<pin name="VCC" x="7.62" y="2.54" length="short" rot="R180"/>
+<pin name="GND" x="7.62" y="-2.54" length="short" rot="R180"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<text x="-7.62" y="5.588" size="1.778" layer="95">&gt;Name</text>
+<text x="-7.62" y="-7.366" size="1.778" layer="96">&gt;Value</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ATSHA204" prefix="U">
+<description>&lt;h3&gt;Atmel ATSHA204&lt;/h3&gt;
+&lt;p&gt;The Atmel ATSHA204 is an optimized authentication chip that includes a 4.5Kb EEPROM. This array can be used for storage of keys, miscellaneous read/write, read-only, password or secret data, and consumption tracking. Access to the various sections of memory can be restricted in a variety of ways and then the configuration locked to prevent changes.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.atmel.com/Images/Atmel-8740-CryptoAuth-ATSHA204-Datasheet.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12887"&gt;SparkFun Electric Imp Shield&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12886"&gt; SparkFun Electric Imp Breakout&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="ATSHA204" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-TSU" package="SOT23-3">
+<connects>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="SDA" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-11208" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7164,6 +7244,9 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="SW1" library="Seeed-OPL-Switch" deviceset="SMD-BUTTON(2P-6.0X3.0X2.5MM)" device="-DHT-1163S"/>
 <part name="SUPPLY19" library="supply2" deviceset="GND" device=""/>
+<part name="U3" library="SparkFun-IC-Special-Function" deviceset="ATSHA204" device="-TSU"/>
+<part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
+<part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7172,6 +7255,7 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <text x="189.23" y="63.5" size="1.27" layer="91">Blue</text>
 <text x="205.74" y="63.5" size="1.27" layer="91" rot="R90">Green</text>
 <text x="215.138" y="63.5" size="1.27" layer="91">Red</text>
+<text x="137.16" y="-26.67" size="1.27" layer="91" rot="R90">pullup</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="-12.7" y="73.66"/>
@@ -7209,6 +7293,9 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <instance part="P+2" gate="1" x="121.92" y="17.78" rot="R90"/>
 <instance part="SW1" gate="G$1" x="85.09" y="60.96" rot="R90"/>
 <instance part="SUPPLY19" gate="GND" x="85.09" y="74.93" rot="R180"/>
+<instance part="U3" gate="G$1" x="149.86" y="-31.75"/>
+<instance part="+3V10" gate="G$1" x="162.56" y="-26.67"/>
+<instance part="SUPPLY5" gate="GND" x="162.56" y="-36.83"/>
 </instances>
 <busses>
 </busses>
@@ -7257,6 +7344,11 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <pinref part="SW1" gate="G$1" pin="2"/>
 <pinref part="SUPPLY19" gate="GND" pin="GND"/>
 <wire x1="85.09" y1="68.58" x2="85.09" y2="72.39" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="GND"/>
+<wire x1="157.48" y1="-34.29" x2="162.56" y2="-34.29" width="0.1524" layer="91"/>
+<pinref part="SUPPLY5" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -7363,6 +7455,11 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <pinref part="U$4" gate="G$1" pin="OUT"/>
 <pinref part="+3V19" gate="G$1" pin="+3V3"/>
 <wire x1="154.94" y1="25.4" x2="154.94" y2="17.78" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="VCC"/>
+<wire x1="157.48" y1="-29.21" x2="162.56" y2="-29.21" width="0.1524" layer="91"/>
+<pinref part="+3V10" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="PUSH" class="0">
@@ -7609,6 +7706,21 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <pinref part="U1" gate="G$1" pin="PB0(ICP/CLKO/PCINT0)"/>
 <wire x1="12.7" y1="99.06" x2="15.24" y2="99.06" width="0.1524" layer="91"/>
 <label x="15.24" y="99.06" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="CRYPTO" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="SDA"/>
+<wire x1="139.7" y1="-31.75" x2="137.16" y2="-31.75" width="0.1524" layer="91"/>
+<label x="134.62" y="-31.75" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="137.16" y1="-31.75" x2="134.62" y2="-31.75" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="-29.21" x2="137.16" y2="-31.75" width="0.1524" layer="91"/>
+<junction x="137.16" y="-31.75"/>
+</segment>
+<segment>
+<pinref part="R7" gate="D" pin="1"/>
+<wire x1="86.36" y1="38.1" x2="82.55" y2="38.1" width="0.1524" layer="91"/>
+<label x="82.55" y="38.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
