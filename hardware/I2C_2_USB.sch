@@ -7398,18 +7398,6 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <label x="15.24" y="91.44" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="LED" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PB0(ICP/CLKO/PCINT0)"/>
-<wire x1="12.7" y1="99.06" x2="15.24" y2="99.06" width="0.1524" layer="91"/>
-<label x="15.24" y="99.06" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="213.36" y1="68.58" x2="213.36" y2="63.5" width="0.1524" layer="91"/>
-<label x="213.36" y="63.5" size="1.27" layer="95" rot="R270" xref="yes"/>
-<pinref part="R2" gate="D" pin="1"/>
-</segment>
-</net>
 <net name="LIGHT_SENSE" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="ADC7"/>
@@ -7438,23 +7426,11 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <label x="15.24" y="45.72" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="ADCENA" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PB1(OC1A/PCINT1)"/>
-<wire x1="12.7" y1="96.52" x2="15.24" y2="96.52" width="0.1524" layer="91"/>
-<label x="15.24" y="96.52" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="TXD" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PD1(TXD/PCINT17)"/>
 <wire x1="12.7" y1="48.26" x2="15.24" y2="48.26" width="0.1524" layer="91"/>
 <label x="15.24" y="48.26" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="203.2" y1="68.58" x2="203.2" y2="63.5" width="0.1524" layer="91"/>
-<label x="203.2" y="63.5" size="1.27" layer="95" rot="R270" xref="yes"/>
-<pinref part="R2" gate="B" pin="1"/>
 </segment>
 </net>
 <net name="RXD" class="0">
@@ -7462,11 +7438,6 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <pinref part="U1" gate="G$1" pin="PD0(RXD/PCINT16)"/>
 <wire x1="12.7" y1="50.8" x2="15.24" y2="50.8" width="0.1524" layer="91"/>
 <label x="15.24" y="50.8" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="193.04" y1="68.58" x2="193.04" y2="63.5" width="0.1524" layer="91"/>
-<label x="193.04" y="63.5" size="1.27" layer="95" rot="R270" xref="yes"/>
-<pinref part="R2" gate="C" pin="1"/>
 </segment>
 </net>
 <net name="ADC" class="0">
@@ -7481,13 +7452,6 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <pinref part="U1" gate="G$1" pin="PC0(ADC0/PCINT8)"/>
 <wire x1="12.7" y1="71.12" x2="15.24" y2="71.12" width="0.1524" layer="91"/>
 <label x="15.24" y="71.12" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="OUTA" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PB2(SS/OC1B/PCINT2)"/>
-<wire x1="12.7" y1="93.98" x2="15.24" y2="93.98" width="0.1524" layer="91"/>
-<label x="15.24" y="93.98" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="RADIO_ON" class="0">
@@ -7609,6 +7573,42 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <pinref part="CN1" gate="G$1" pin="3"/>
 <wire x1="83.82" y1="20.32" x2="78.74" y2="20.32" width="0.1524" layer="91"/>
 <label x="78.74" y="20.32" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="LED_GREEN" class="0">
+<segment>
+<pinref part="R2" gate="B" pin="1"/>
+<wire x1="203.2" y1="68.58" x2="203.2" y2="63.5" width="0.1524" layer="91"/>
+<label x="203.2" y="63.5" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PB1(OC1A/PCINT1)"/>
+<wire x1="12.7" y1="96.52" x2="15.24" y2="96.52" width="0.1524" layer="91"/>
+<label x="15.24" y="96.52" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="LED_BLUE" class="0">
+<segment>
+<pinref part="R2" gate="C" pin="1"/>
+<wire x1="193.04" y1="68.58" x2="193.04" y2="63.5" width="0.1524" layer="91"/>
+<label x="193.04" y="63.5" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PB2(SS/OC1B/PCINT2)"/>
+<wire x1="12.7" y1="93.98" x2="15.24" y2="93.98" width="0.1524" layer="91"/>
+<label x="15.24" y="93.98" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="LED_RED" class="0">
+<segment>
+<wire x1="213.36" y1="68.58" x2="213.36" y2="63.5" width="0.1524" layer="91"/>
+<label x="213.36" y="63.5" size="1.27" layer="95" rot="R270" xref="yes"/>
+<pinref part="R2" gate="D" pin="1"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PB0(ICP/CLKO/PCINT0)"/>
+<wire x1="12.7" y1="99.06" x2="15.24" y2="99.06" width="0.1524" layer="91"/>
+<label x="15.24" y="99.06" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
