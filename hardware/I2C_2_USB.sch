@@ -7205,6 +7205,257 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-RF">
+<description>&lt;h3&gt;SparkFun RF, WiFi, Cellular, and Bluetooth&lt;/h3&gt;
+In this library you'll find things that send or receive RF-- cellular modules, Bluetooth, WiFi, etc.
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="RFD77101">
+<description>&lt;h3&gt;Simblee  BLE Module RFD77101&lt;/h3&gt;
+&lt;p&gt;© 2015 RF Digital Corporation&lt;br/&gt; 
+&lt;a href="http://www.RFDigital.com"&gt;www.RFDigital.com&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://www.Simblee.com"&gt;www.Simblee.com&lt;/a&gt;&lt;br/&gt;
+PATENTS PENDING 04.01.2015&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 45&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.5mm&lt;/li&gt;
+&lt;li&gt;Area:7mmx10mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”https://cdn.sparkfun.com/datasheets/IoT/Simblee%20RFD77101%20Datasheet%20v1.0.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;RFD77101&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<circle x="2.3368" y="-4.953" radius="0.3048" width="0" layer="31"/>
+<circle x="4.2926" y="-4.953" radius="0.3048" width="0" layer="31"/>
+<circle x="4.318" y="-6.985" radius="0.3048" width="0" layer="31"/>
+<circle x="2.286" y="-6.9596" radius="0.3048" width="0" layer="31"/>
+<wire x1="-0.195" y1="0.3048" x2="-0.195" y2="0.5" width="0.1" layer="21"/>
+<wire x1="-0.195" y1="0.5" x2="6.805" y2="0.5" width="0.1" layer="21"/>
+<wire x1="6.805" y1="0.5" x2="6.805" y2="-3.2004" width="0.1" layer="21"/>
+<wire x1="-0.195" y1="-9.5" x2="-0.195" y2="-9.3016" width="0.1" layer="21"/>
+<wire x1="-0.195" y1="-9.5" x2="0.7492" y2="-9.5" width="0.1" layer="21"/>
+<wire x1="5.8508" y1="-9.5" x2="6.805" y2="-9.5" width="0.1" layer="21"/>
+<wire x1="6.805" y1="-9.5" x2="6.805" y2="-9.3026" width="0.1" layer="21"/>
+<rectangle x1="0.762" y1="-3.175" x2="6.858" y2="0.508" layer="39"/>
+<rectangle x1="0.762" y1="-3.175" x2="6.858" y2="0.508" layer="40"/>
+<smd name="1" x="0" y="0" dx="1" dy="0.254" layer="1"/>
+<smd name="2" x="0" y="-0.5" dx="1" dy="0.254" layer="1"/>
+<smd name="3" x="0" y="-1" dx="1" dy="0.254" layer="1"/>
+<smd name="4" x="0" y="-1.5" dx="1" dy="0.254" layer="1"/>
+<smd name="5" x="0" y="-2" dx="1" dy="0.254" layer="1"/>
+<smd name="6" x="0" y="-2.5" dx="1" dy="0.254" layer="1"/>
+<smd name="7" x="0" y="-3" dx="1" dy="0.254" layer="1"/>
+<smd name="8" x="0" y="-3.5" dx="1" dy="0.254" layer="1"/>
+<smd name="9" x="0" y="-4" dx="1" dy="0.254" layer="1"/>
+<smd name="10" x="0" y="-4.5" dx="1" dy="0.254" layer="1"/>
+<smd name="11" x="0" y="-5" dx="1" dy="0.254" layer="1"/>
+<smd name="12" x="0" y="-5.5" dx="1" dy="0.254" layer="1"/>
+<smd name="13" x="0" y="-6" dx="1" dy="0.254" layer="1"/>
+<smd name="14" x="0" y="-6.5" dx="1" dy="0.254" layer="1"/>
+<smd name="15" x="0" y="-7" dx="1" dy="0.254" layer="1"/>
+<smd name="16" x="0" y="-7.5" dx="1" dy="0.254" layer="1"/>
+<smd name="17" x="0" y="-8" dx="1" dy="0.254" layer="1"/>
+<smd name="18" x="0" y="-8.5" dx="1" dy="0.254" layer="1"/>
+<smd name="19" x="0" y="-9" dx="1" dy="0.254" layer="1"/>
+<smd name="20" x="1.055" y="-9.29" dx="1" dy="0.254" layer="1" rot="R90"/>
+<smd name="21" x="1.555" y="-9.29" dx="1" dy="0.254" layer="1" rot="R90"/>
+<smd name="22" x="2.055" y="-9.29" dx="1" dy="0.254" layer="1" rot="R90"/>
+<smd name="23" x="2.555" y="-9.29" dx="1" dy="0.254" layer="1" rot="R90"/>
+<smd name="24" x="3.055" y="-9.29" dx="1" dy="0.254" layer="1" rot="R90"/>
+<smd name="25" x="3.555" y="-9.29" dx="1" dy="0.254" layer="1" rot="R90"/>
+<smd name="26" x="4.055" y="-9.29" dx="1" dy="0.254" layer="1" rot="R90"/>
+<smd name="27" x="4.555" y="-9.29" dx="1" dy="0.254" layer="1" rot="R90"/>
+<smd name="28" x="5.055" y="-9.29" dx="1" dy="0.254" layer="1" rot="R90"/>
+<smd name="29" x="5.555" y="-9.29" dx="1" dy="0.254" layer="1" rot="R90"/>
+<smd name="30" x="6.61" y="-9" dx="1" dy="0.254" layer="1"/>
+<smd name="31" x="6.61" y="-8.5" dx="1" dy="0.254" layer="1"/>
+<smd name="32" x="6.61" y="-8" dx="1" dy="0.254" layer="1"/>
+<smd name="33" x="6.61" y="-7.5" dx="1" dy="0.254" layer="1"/>
+<smd name="34" x="6.61" y="-7" dx="1" dy="0.254" layer="1"/>
+<smd name="35" x="6.61" y="-6.5" dx="1" dy="0.254" layer="1"/>
+<smd name="36" x="6.61" y="-6" dx="1" dy="0.254" layer="1"/>
+<smd name="37" x="6.61" y="-5.5" dx="1" dy="0.254" layer="1"/>
+<smd name="38" x="6.61" y="-5" dx="1" dy="0.254" layer="1"/>
+<smd name="39" x="6.61" y="-4.5" dx="1" dy="0.254" layer="1"/>
+<smd name="40" x="6.61" y="-4" dx="1" dy="0.254" layer="1"/>
+<smd name="41" x="6.61" y="-3.5" dx="1" dy="0.254" layer="1"/>
+<smd name="42" x="2.3" y="-4.99" dx="0.9" dy="0.9" layer="1" stop="no" thermals="no" cream="no"/>
+<smd name="43" x="2.3" y="-6.99" dx="1.5" dy="1.5" layer="1" cream="no"/>
+<smd name="44" x="4.3" y="-6.99" dx="1.5" dy="1.5" layer="1" cream="no"/>
+<smd name="45" x="4.3" y="-4.99" dx="1.5" dy="1.5" layer="1" cream="no"/>
+<text x="3.175" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="3.175" y="-10.16" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<polygon width="0" layer="1">
+<vertex x="3.05" y="-5.74"/>
+<vertex x="1.55" y="-5.74"/>
+<vertex x="1.55" y="-4.73"/>
+<vertex x="2.04" y="-4.24"/>
+<vertex x="3.05" y="-4.24"/>
+</polygon>
+<polygon width="0.005" layer="29">
+<vertex x="3.15" y="-4.14"/>
+<vertex x="1.96" y="-4.14"/>
+<vertex x="1.45" y="-4.65"/>
+<vertex x="1.45" y="-5.84"/>
+<vertex x="3.15" y="-5.84"/>
+</polygon>
+</package>
+</packages>
+<symbols>
+<symbol name="RFD77101">
+<description>&lt;p&gt;&lt;strong&gt;Simblee  BLE Module RFD77101&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;© 2015 RF Digital Corporation&lt;br/&gt; 
+&lt;a href="http://www.RFDigital.com"&gt;www.RFDigital.com&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://www.Simblee.com"&gt;www.Simblee.com&lt;/a&gt;&lt;br/&gt;
+PATENTS PENDING 04.01.2015&lt;br/&gt;&lt;/p&gt;</description>
+<wire x1="-25.4" y1="33.02" x2="-25.4" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="-27.94" x2="27.94" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-27.94" x2="27.94" y2="15.24" width="0.254" layer="94"/>
+<wire x1="27.94" y1="15.24" x2="27.94" y2="33.02" width="0.254" layer="94"/>
+<wire x1="27.94" y1="33.02" x2="-10.16" y2="33.02" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="33.02" x2="-25.4" y2="33.02" width="0.254" layer="94"/>
+<wire x1="27.94" y1="15.24" x2="-10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="15.24" x2="-10.16" y2="33.02" width="0.254" layer="94"/>
+<pin name="!RESET!" x="-30.48" y="12.7" length="middle" direction="in"/>
+<pin name="DNC@3" x="-30.48" y="25.4" length="middle" direction="nc"/>
+<pin name="DNC@5" x="-30.48" y="20.32" length="middle" direction="nc"/>
+<pin name="DNC@10" x="-30.48" y="7.62" length="middle" direction="nc"/>
+<pin name="FACTORY" x="-30.48" y="10.16" length="middle" direction="nc"/>
+<pin name="GND@1" x="-30.48" y="30.48" length="middle" direction="pwr"/>
+<pin name="GND@2" x="-30.48" y="27.94" length="middle" direction="pwr"/>
+<pin name="GND@4" x="-30.48" y="22.86" length="middle" direction="pwr"/>
+<pin name="GND@6" x="-30.48" y="17.78" length="middle" direction="pwr"/>
+<pin name="GND@19" x="-30.48" y="-15.24" length="middle" direction="pwr"/>
+<pin name="GND@30" x="33.02" y="-15.24" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND@42" x="-15.24" y="-33.02" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@43" x="-12.7" y="-33.02" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@44" x="15.24" y="-33.02" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@45" x="17.78" y="-33.02" length="middle" direction="pwr" rot="R90"/>
+<pin name="P0.00/AREF0" x="2.54" y="-33.02" length="middle" rot="R90"/>
+<pin name="P0.01/AIN2" x="-2.54" y="-33.02" length="middle" rot="R90"/>
+<pin name="P0.02/AIN3" x="0" y="-33.02" length="middle" rot="R90"/>
+<pin name="P0.03/AIN4" x="-5.08" y="-33.02" length="middle" rot="R90"/>
+<pin name="P0.04/AIN5" x="33.02" y="-10.16" length="middle" rot="R180"/>
+<pin name="P0.05/AIN6" x="-7.62" y="-33.02" length="middle" rot="R90"/>
+<pin name="P0.06/AREF1/AIN7" x="33.02" y="-12.7" length="middle" rot="R180"/>
+<pin name="P0.07" x="5.08" y="-33.02" length="middle" rot="R90"/>
+<pin name="P0.08" x="-10.16" y="-33.02" length="middle" rot="R90"/>
+<pin name="P0.09" x="-30.48" y="-12.7" length="middle"/>
+<pin name="P0.10" x="7.62" y="-33.02" length="middle" rot="R90"/>
+<pin name="P0.11" x="-30.48" y="-10.16" length="middle"/>
+<pin name="P0.12" x="-30.48" y="-7.62" length="middle"/>
+<pin name="P0.13" x="10.16" y="-33.02" length="middle" rot="R90"/>
+<pin name="P0.14" x="12.7" y="-33.02" length="middle" rot="R90"/>
+<pin name="P0.15" x="-30.48" y="-5.08" length="middle"/>
+<pin name="P0.16" x="-30.48" y="-2.54" length="middle"/>
+<pin name="P0.17" x="-30.48" y="2.54" length="middle"/>
+<pin name="P0.18" x="-30.48" y="0" length="middle"/>
+<pin name="P0.19" x="-30.48" y="5.08" length="middle"/>
+<pin name="P0.20" x="33.02" y="-7.62" length="middle" rot="R180"/>
+<pin name="P0.21" x="33.02" y="0" length="middle" rot="R180"/>
+<pin name="P0.22" x="33.02" y="2.54" length="middle" rot="R180"/>
+<pin name="P0.23" x="33.02" y="-5.08" length="middle" rot="R180"/>
+<pin name="P0.24" x="33.02" y="-2.54" length="middle" rot="R180"/>
+<pin name="P0.25" x="33.02" y="5.08" length="middle" rot="R180"/>
+<pin name="P0.28" x="33.02" y="7.62" length="middle" rot="R180"/>
+<pin name="P0.29" x="33.02" y="10.16" length="middle" rot="R180"/>
+<pin name="P0.30" x="33.02" y="12.7" length="middle" rot="R180"/>
+<pin name="VDD" x="-30.48" y="15.24" length="middle" direction="pwr"/>
+<text x="0" y="22.86" size="2.54" layer="94">ANTENNA</text>
+<text x="-25.4" y="34.29" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="17.78" y="34.036" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="RFD77101" prefix="U">
+<description>&lt;p&gt;&lt;strong&gt;Simblee  BLE Module RFD77101&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;© 2015 RF Digital Corporation&lt;br/&gt; 
+&lt;a href="https://cdn.sparkfun.com/datasheets/IoT/Simblee%20RFD77101%20Datasheet%20v1.0.pdf"&gt;Datasheet&lt;/a&gt;&lt;br/&gt;
+PATENTS PENDING 04.01.2015
+&lt;br&gt;
+&lt;br&gt;
+Bluetooth Smart radio transceiver, ARM Cortex M0 microcontroller.
+&lt;br&gt; 128kB Flash, 24kB RAM, no EEPROM
+&lt;br&gt; Arduino-compatible. 
+
+&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13808”&gt;Simblee BLE Module - RFD77101&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13632”&gt;SparkFun Simblee BLE Breakout - RFD77101&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="RFD77101" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RFD77101">
+<connects>
+<connect gate="G$1" pin="!RESET!" pad="8"/>
+<connect gate="G$1" pin="DNC@10" pad="10"/>
+<connect gate="G$1" pin="DNC@3" pad="3"/>
+<connect gate="G$1" pin="DNC@5" pad="5"/>
+<connect gate="G$1" pin="FACTORY" pad="9"/>
+<connect gate="G$1" pin="GND@1" pad="1"/>
+<connect gate="G$1" pin="GND@19" pad="19"/>
+<connect gate="G$1" pin="GND@2" pad="2"/>
+<connect gate="G$1" pin="GND@30" pad="30"/>
+<connect gate="G$1" pin="GND@4" pad="4"/>
+<connect gate="G$1" pin="GND@42" pad="42"/>
+<connect gate="G$1" pin="GND@43" pad="43"/>
+<connect gate="G$1" pin="GND@44" pad="44"/>
+<connect gate="G$1" pin="GND@45" pad="45"/>
+<connect gate="G$1" pin="GND@6" pad="6"/>
+<connect gate="G$1" pin="P0.00/AREF0" pad="25"/>
+<connect gate="G$1" pin="P0.01/AIN2" pad="23"/>
+<connect gate="G$1" pin="P0.02/AIN3" pad="24"/>
+<connect gate="G$1" pin="P0.03/AIN4" pad="22"/>
+<connect gate="G$1" pin="P0.04/AIN5" pad="32"/>
+<connect gate="G$1" pin="P0.05/AIN6" pad="21"/>
+<connect gate="G$1" pin="P0.06/AREF1/AIN7" pad="31"/>
+<connect gate="G$1" pin="P0.07" pad="26"/>
+<connect gate="G$1" pin="P0.08" pad="20"/>
+<connect gate="G$1" pin="P0.09" pad="18"/>
+<connect gate="G$1" pin="P0.10" pad="27"/>
+<connect gate="G$1" pin="P0.11" pad="17"/>
+<connect gate="G$1" pin="P0.12" pad="16"/>
+<connect gate="G$1" pin="P0.13" pad="28"/>
+<connect gate="G$1" pin="P0.14" pad="29"/>
+<connect gate="G$1" pin="P0.15" pad="15"/>
+<connect gate="G$1" pin="P0.16" pad="14"/>
+<connect gate="G$1" pin="P0.17" pad="12"/>
+<connect gate="G$1" pin="P0.18" pad="13"/>
+<connect gate="G$1" pin="P0.19" pad="11"/>
+<connect gate="G$1" pin="P0.20" pad="33"/>
+<connect gate="G$1" pin="P0.21" pad="36"/>
+<connect gate="G$1" pin="P0.22" pad="37"/>
+<connect gate="G$1" pin="P0.23" pad="34"/>
+<connect gate="G$1" pin="P0.24" pad="35"/>
+<connect gate="G$1" pin="P0.25" pad="38"/>
+<connect gate="G$1" pin="P0.28" pad="39"/>
+<connect gate="G$1" pin="P0.29" pad="40"/>
+<connect gate="G$1" pin="P0.30" pad="41"/>
+<connect gate="G$1" pin="VDD" pad="7"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="COMP-13237" constant="no"/>
+<attribute name="SF_ID" value="WRL-13808" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7247,6 +7498,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U3" library="SparkFun-IC-Special-Function" deviceset="ATSHA204" device="-TSU"/>
 <part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
+<part name="U2" library="SparkFun-RF" deviceset="RFD77101" device=""/>
+<part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
+<part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7296,6 +7550,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="U3" gate="G$1" x="149.86" y="-31.75"/>
 <instance part="+3V10" gate="G$1" x="162.56" y="-26.67"/>
 <instance part="SUPPLY5" gate="GND" x="162.56" y="-36.83"/>
+<instance part="U2" gate="G$1" x="226.06" y="-17.78"/>
+<instance part="SUPPLY1" gate="GND" x="241.3" y="-59.69"/>
+<instance part="+3V1" gate="G$1" x="187.96" y="1.27"/>
 </instances>
 <busses>
 </busses>
@@ -7349,6 +7606,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U3" gate="G$1" pin="GND"/>
 <wire x1="157.48" y1="-34.29" x2="162.56" y2="-34.29" width="0.1524" layer="91"/>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="GND@44"/>
+<pinref part="SUPPLY1" gate="GND" pin="GND"/>
+<wire x1="241.3" y1="-50.8" x2="241.3" y2="-57.15" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="GND@45"/>
+<wire x1="243.84" y1="-50.8" x2="241.3" y2="-50.8" width="0.1524" layer="91"/>
+<junction x="241.3" y="-50.8"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -7461,6 +7726,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="157.48" y1="-29.21" x2="162.56" y2="-29.21" width="0.1524" layer="91"/>
 <pinref part="+3V10" gate="G$1" pin="+3V3"/>
 </segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="VDD"/>
+<pinref part="+3V1" gate="G$1" pin="+3V3"/>
+<wire x1="195.58" y1="-2.54" x2="187.96" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="-2.54" x2="187.96" y2="-1.27" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="PUSH" class="0">
 <segment>
@@ -7529,12 +7800,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="12.7" y1="48.26" x2="15.24" y2="48.26" width="0.1524" layer="91"/>
 <label x="15.24" y="48.26" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="P0.01/AIN2"/>
+<wire x1="223.52" y1="-50.8" x2="223.52" y2="-54.61" width="0.1524" layer="91"/>
+<label x="223.52" y="-54.61" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
 </net>
 <net name="RXD" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PD0(RXD/PCINT16)"/>
 <wire x1="12.7" y1="50.8" x2="15.24" y2="50.8" width="0.1524" layer="91"/>
 <label x="15.24" y="50.8" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="P0.00/AREF0"/>
+<wire x1="228.6" y1="-50.8" x2="228.6" y2="-54.61" width="0.1524" layer="91"/>
+<label x="228.6" y="-54.61" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="ADC" class="0">
@@ -7549,13 +7830,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U1" gate="G$1" pin="PC0(ADC0/PCINT8)"/>
 <wire x1="12.7" y1="71.12" x2="15.24" y2="71.12" width="0.1524" layer="91"/>
 <label x="15.24" y="71.12" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="RADIO_ON" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PD7(AIN1/PCINT23)"/>
-<wire x1="12.7" y1="33.02" x2="15.24" y2="33.02" width="0.1524" layer="91"/>
-<label x="15.24" y="33.02" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="USB_D-" class="0">
@@ -7721,6 +7995,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="R7" gate="D" pin="1"/>
 <wire x1="86.36" y1="38.1" x2="82.55" y2="38.1" width="0.1524" layer="91"/>
 <label x="82.55" y="38.1" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="BLE_RESET" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="!RESET!"/>
+<wire x1="195.58" y1="-5.08" x2="191.77" y2="-5.08" width="0.1524" layer="91"/>
+<label x="191.77" y="-5.08" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PD7(AIN1/PCINT23)"/>
+<wire x1="12.7" y1="33.02" x2="15.24" y2="33.02" width="0.1524" layer="91"/>
+<label x="15.24" y="33.02" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
